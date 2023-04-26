@@ -1,29 +1,56 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
+import calculate from '../logic/calculate';
 
-const getClass = (index) => {
-  if (index === 16) {
-    return 'two-spaces';
-  }
-  if (index === 3 || index === 7 || index === 11 || index === 15 || index === 18) {
-    return 'orange';
-  }
-  return '';
-};
+const ButtonGrid = () => {
+  const [calc, setCalc] = useState({
+    total: 0,
+    next: '',
+    operation: '',
+  });
 
-const ButtonGrid = (props) => {
-  const { buttons } = props;
+  useEffect(() => {
+    const { total, next } = calc;
+    const output = document.querySelector('.output');
+    if (next !== null) {
+      output.value = next;
+    } else if (total !== null) {
+      output.value = total;
+    }
+  }, [calc]);
+
+  const handleClick = (event) => {
+    if (event.target.textContent === 'AC') {
+      const output = document.querySelector('.output');
+      output.value = 0;
+    }
+    const result = calculate(calc, event.target.textContent);
+    setCalc({ ...calc, ...result });
+  };
+
   return (
-    <div className="button-grid">
-      {buttons.map((button, index) => (
-        <button type="button" key={button} className={getClass(index)}>{button}</button>
-      ))}
+    <div className="calculator-grid">
+      <input className="output" placeholder="0" dir="rtl" />
+      <button type="button" onClick={handleClick}>AC</button>
+      <button type="button" onClick={handleClick}>+/-</button>
+      <button type="button" onClick={handleClick}>%</button>
+      <button type="button" className="orange" onClick={handleClick}>÷</button>
+      <button type="button" onClick={handleClick}>7</button>
+      <button type="button" onClick={handleClick}>8</button>
+      <button type="button" onClick={handleClick}>9</button>
+      <button type="button" className="orange" onClick={handleClick}>x</button>
+      <button type="button" onClick={handleClick}>4</button>
+      <button type="button" onClick={handleClick}>5</button>
+      <button type="button" onClick={handleClick}>6</button>
+      <button type="button" className="orange" onClick={handleClick}>-</button>
+      <button type="button" onClick={handleClick}>1</button>
+      <button type="button" onClick={handleClick}>2</button>
+      <button type="button" onClick={handleClick}>3</button>
+      <button type="button" className="orange" onClick={handleClick}>+</button>
+      <button type="button" className="two-spaces" onClick={handleClick}>0</button>
+      <button type="button" onClick={handleClick}>.</button>
+      <button type="button" className="orange" onClick={handleClick}>=</button>
     </div>
   );
-};
-
-ButtonGrid.propTypes = {
-  buttons: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default ButtonGrid;
