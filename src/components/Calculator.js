@@ -2,7 +2,9 @@ import React from 'react';
 import ButtonGrid from './ButtonGrid';
 
 const Calculator = () => (
-  <ButtonGrid />
+  <div>
+    <ButtonGrid />
+  </div>
 );
 
 export default Calculator;
