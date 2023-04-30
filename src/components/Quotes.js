@@ -32,7 +32,19 @@ const Quotes = () => {
   return (
     <div className="quotes-container">
       {loading && <p>Loading...</p>}
-      {!loading && !error && <p>{quotes.quote}</p>}
+      {!loading && !error && (
+        <div>
+          <p className="italic">
+            &quot;
+            {quotes.quote}
+            &quot;
+          </p>
+          <p>
+            -
+            {quotes.author}
+          </p>
+        </div>
+      )}
       {!loading && error && <p>{error}</p>}
     </div>
   );
