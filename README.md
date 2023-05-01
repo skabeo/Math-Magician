@@ -13,7 +13,7 @@
 # 📗 Table of Contents <a id="table-of-contents"></a>
 
 - [� Table of Contents](#table-of-contents)
-- [📖 Restaurant Capstone Project ](#about-project)
+- [📖 Math-Magicians Project ](#about-project)
 - [🛠 Built With ](#built-with)
   - [Tech Stack ](#tech-stack)
   - [Key Features ](#key-features)
