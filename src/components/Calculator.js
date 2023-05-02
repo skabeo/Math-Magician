@@ -2,7 +2,8 @@ import React from 'react';
 import ButtonGrid from './ButtonGrid';
 
 const Calculator = () => (
-  <div>
+  <div className="calculatorCont white">
+    <h2 className="calculatorText">Let&apos;s do some math!</h2>
     <ButtonGrid />
   </div>
 );

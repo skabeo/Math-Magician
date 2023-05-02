@@ -12,7 +12,15 @@ body {
   background-color: rgb(48, 48, 47);
   padding: 0;
   margin: 0;
+  padding-top: 40px;
   font-family: 'Comic Neue', cursive;
+}
+
+.App {
+  max-width: 768px;
+  height: 90vh;
+  margin: 0 auto;
+  box-shadow: 0 0 6px rgba(242, 239, 239, 0.6);
 }
 
 .output {
@@ -35,8 +43,8 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(6, 60px);
-  margin: 0 auto;
   width: fit-content;
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.6);
 }
 
 .calculator-grid button {

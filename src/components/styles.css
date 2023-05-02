@@ -7,6 +7,86 @@
   font-size: 20px;
 }
 
+.loading {
+  margin: 0 auto;
+  width: 12px;
+  height: 12px;
+  background: #f4c154;
+  border-radius: 50%;
+  box-shadow: 12px 0 #f4c154, -24px 0 #f4c154;
+  animation: d6 1s infinite linear alternate;
+}
+
+@keyframes d6 {
+  50% { box-shadow: 12px 0 #f4c154, -12px 0 #f4c154; }
+  100% { box-shadow: 24px 0 #f4c154, -12px 0 #f4c154; }
+}
+
 .italic {
   font-style: italic;
+}
+
+.white {
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+}
+
+.navTitle {
+  font-size: 30px;
+  color: #f4c154;
+}
+
+nav div {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #f4c154;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.homeCont {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.homeTitle {
+  padding-top: 40px;
+}
+
+.homePara,
+.homePara2 {
+  padding-top: 40px;
+}
+
+.calculatorCont {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .calculatorCont {
+    flex-direction: row;
+    gap: 80px;
+    padding-top: 60px;
+  }
 }

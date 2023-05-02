@@ -31,7 +31,7 @@ const Quotes = () => {
 
   return (
     <div className="quotes-container">
-      {loading && <p>Loading...</p>}
+      {loading && <p className="loading" />}
       {!loading && !error && (
         <div>
           <p className="italic">
