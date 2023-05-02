@@ -9,16 +9,17 @@
 
 .loading {
   margin: 0 auto;
-  width:12px;
-  height:12px;
-  background: #F4C154;
+  width: 12px;
+  height: 12px;
+  background: #f4c154;
   border-radius: 50%;
-  box-shadow: 12px 0 #F4C154,-24px 0 #F4C154;
-  animation:d6 1s infinite linear alternate;
+  box-shadow: 12px 0 #f4c154, -24px 0 #f4c154;
+  animation: d6 1s infinite linear alternate;
 }
+
 @keyframes d6 {
-    50% {box-shadow: 12px 0 #F4C154,-12px 0 #F4C154}
-    100%{box-shadow: 24px 0 #F4C154,-12px 0 #F4C154}
+  50% { box-shadow: 12px 0 #f4c154, -12px 0 #f4c154; }
+  100% { box-shadow: 24px 0 #f4c154, -12px 0 #f4c154; }
 }
 
 .italic {
@@ -38,7 +39,7 @@ nav {
 
 .navTitle {
   font-size: 30px;
-  color: #F4C154;
+  color: #f4c154;
 }
 
 nav div {
@@ -51,8 +52,8 @@ nav a {
 }
 
 nav a.active {
- font-weight: bold;
- color: #F4C154
+  font-weight: bold;
+  color: #f4c154;
 }
 
 nav a:hover {
