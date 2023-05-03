@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
-import axios from 'axios';
 
 const Quotes = () => {
   const [quotes, setQuotes] = useState('');
@@ -13,12 +12,12 @@ const Quotes = () => {
   useEffect(() => {
     const fetchQuote = async () => {
       try {
-        const response = await axios.get(URL, {
+        const response = await fetch(URL, {
           headers: {
             'X-Api-Key': API_KEY,
           },
         });
-        const { data } = response;
+        const data = await response.json();
         setQuotes(data[0]);
         setLoading(false);
       } catch (error) {
