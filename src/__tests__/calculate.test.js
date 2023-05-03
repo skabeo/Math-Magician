@@ -101,4 +101,4 @@ describe('calculate', () => {
     const actual = calculate(obj, buttonName);
     expect(actual).toEqual(expected);
   });
-})
+});

@@ -15,4 +15,3 @@ describe('Test navbar component', () => {
     expect(tree).toMatchSnapshot();
   });
 });
-
