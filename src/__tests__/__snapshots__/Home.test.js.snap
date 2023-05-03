@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="white homeCont"
+  >
+    <h2
+      class="homeTitle"
+    >
+      Welcome to our page
+    </h2>
+    <p
+      class="homePara"
+    >
+      Welcome to Math Magicians, the one-stop destination for all your math needs! Are you tired of staring at your calculator, trying to figure out basic calculations? Well, look no further because we have you covered! With Math Magicians, you can now perform basic calculations with just a few clicks.
+    </p>
+    <p
+      class="homePara2"
+    >
+       And that's not all - we also have a surprise for you! How about some random quotes to keep you motivated and inspired throughout the day? Yes, you read that right! We've combined the power of math and inspiration to create an unforgettable experience. So, sit back, relax, and let Math Magicians do the magic for you!
+    </p>
+  </div>
+</DocumentFragment>
+`;
