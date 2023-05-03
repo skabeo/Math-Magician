@@ -9,7 +9,7 @@ describe('Calculator component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  test('clicking the 1 button', () => {
+  test('Should render the value 1 when the 1 button is clicked', () => {
     const { getByText } = render(<Calculator />);
     const button = getByText('1');
     fireEvent.click(button);
