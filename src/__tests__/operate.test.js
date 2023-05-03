@@ -1,15 +1,15 @@
 import operate from '../logic/operate';
 
 describe('operate', () => {
-  it('should add two numbers', () => {
+  it('should add two numbers and return a result', () => {
     expect(operate('5', '2', '+')).toEqual('7');
   });
 
-  it('should subtract two numbers', () => {
+  it('should subtract two numbers and return a result', () => {
     expect(operate('5', '2', '-')).toEqual('3');
   });
 
-  it('should multiply two numbers', () => {
+  it('should multiply two numbers and return a result', () => {
     expect(operate('5', '2', 'x')).toEqual('10');
   });
 
