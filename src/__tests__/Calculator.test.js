@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect';
 import Calculator from '../components/Calculator';
 
 describe('Calculator component', () => {
-  test('renders correctly', () => {
+  test('should render Calculator component correctly', () => {
     const { container } = render(<Calculator />);
     expect(container).toMatchSnapshot();
   });
