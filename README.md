@@ -75,7 +75,7 @@
 
 ## 🚀 Live Demo <a id="live-demo"></a>
 
-- An implementation of this portfolio will be live on [Github Pages](https://skabeo.github.io/Math-Magician/dist/) (to be updated)
+- Check out the live demo [here](https://skabeo-math-magician.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
